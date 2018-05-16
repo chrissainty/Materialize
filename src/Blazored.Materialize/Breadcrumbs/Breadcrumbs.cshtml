@@ -1,0 +1,12 @@
+<nav>
+    <div class="nav-wrapper">
+        <div class="col s12">
+            @ChildContent
+        </div>
+    </div>
+</nav>
+
+@functions {
+    [Parameter]
+    private RenderFragment ChildContent { get; set; }
+}
