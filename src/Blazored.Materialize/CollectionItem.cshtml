@@ -1,0 +1,28 @@
+@if (string.IsNullOrWhiteSpace(Link)) 
+{
+    <li class="collection-item">@ChildContent</li>
+} 
+else 
+{
+    <a href="@Link" class="collection-item @(IsActive ? "active" : "")"><span class="badge">@BadgeCount</span>@ChildContent</a>
+}
+
+@functions {
+    [Parameter]
+    private RenderFragment ChildContent {get;set;}
+    [Parameter]
+    private string Link { get; set; }
+    [Parameter]
+    private bool IsActive { get; set; }
+    [Parameter]
+    private string ShowBadge { get; set; }
+    [Parameter]
+    private string ShowNewBadge { get; set; }
+    [Parameter]
+    private string BadgeCount { get; set; }
+
+    protected override void OnInit() 
+    {
+        Console.WriteLine(Link);
+    } 
+}

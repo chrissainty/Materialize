@@ -1,0 +1,8 @@
+@inherits ButtonBase
+
+<a disabled="@IsDisabled" class="waves-effect waves-teal btn-flat @(IsSmall ? "btn-small" : "") @(IsLarge ? "btn-large" : "")">@ChildContent</a>
+
+@functions {
+    [Parameter]
+    private RenderFragment ChildContent { get; set; }
+}
