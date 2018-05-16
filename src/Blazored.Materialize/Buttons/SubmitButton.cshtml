@@ -1,6 +1,6 @@
 @inherits ButtonBase
 
-<button disabled="@IsDisabled" class="btn waves-effect waves-light @(IsSmall ? "btn-small" : "") @(IsLarge ? "btn-large" : "")" type="submit" name="action">
+<button disabled="@Disabled" class="btn waves-effect waves-light @(IsSmall ? "btn-small" : "") @(IsLarge ? "btn-large" : "")" type="submit" name="action">
     @ChildContent <i class="material-icons right">send</i>
 </button>
 
