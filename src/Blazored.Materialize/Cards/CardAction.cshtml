@@ -1,11 +1,8 @@
-<div class="card @CardCss">
+<div class="card-action">
     @ChildContent
 </div>
 
 @functions {
-
-    [Parameter]
-    private string CardCss { get; set; }
     [Parameter]
     private RenderFragment ChildContent { get; set; }
 }

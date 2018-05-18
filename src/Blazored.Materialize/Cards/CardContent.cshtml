@@ -1,0 +1,13 @@
+<div class="card-content @CardContentCss">
+    <span class="card-title">@Title</span>
+    @ChildContent
+</div>
+
+@functions {
+    [Parameter]
+    private string CardContentCss { get; set; }
+    [Parameter]
+    private RenderFragment ChildContent { get; set; }
+    [Parameter]
+    private string Title { get; set; }
+}
