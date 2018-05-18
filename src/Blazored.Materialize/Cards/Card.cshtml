@@ -1,11 +1,10 @@
-<div class="card @CardCss">
+@inherits Blazored.Materialize.Base.BaseComponent
+
+<div class="card @Css">
     @ChildContent
 </div>
 
 @functions {
-
-    [Parameter]
-    private string CardCss { get; set; }
     [Parameter]
     private RenderFragment ChildContent { get; set; }
 }

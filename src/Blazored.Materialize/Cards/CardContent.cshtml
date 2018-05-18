@@ -1,11 +1,14 @@
-<div class="card-content @CardContentCss">
-    <span class="card-title">@Title</span>
+@inherits Blazored.Materialize.Base.BaseComponent
+
+<div class="card-content @Css">
+    @if (!string.IsNullOrEmpty(Title)) 
+    {
+        <span class="card-title">@Title</span>
+    }
     @ChildContent
 </div>
 
 @functions {
-    [Parameter]
-    private string CardContentCss { get; set; }
     [Parameter]
     private RenderFragment ChildContent { get; set; }
     [Parameter]

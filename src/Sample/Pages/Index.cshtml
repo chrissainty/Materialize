@@ -10,16 +10,16 @@
 
 <div class="row">
     <div class="col m6">
-        <Card CardCss="blue-grey darken-1">
-            <CardContent Title="Basic Card" CardContentCss="white-text">
+        <Card Css="blue-grey darken-1">
+            <CardContent Title="Basic Card" Css="white-text">
                 <p>This is a load of content for the card.</p>
                 <p>Here is a second paragraph of text.</p>              
             </CardContent>
-            <CardAction>
-                <CardLink>Link 1</CardLink>
-                <CardLink>Link 2</CardLink>
-                <CardLink>Link 3</CardLink>
-            </CardAction>
+            <div class="card-action">
+                <a href="#">Link 1</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 3</a>
+            </div>
         </Card>
     </div>
 </div>
@@ -34,12 +34,33 @@
                 <p>This is a load of content for the card.</p>
                 <p>Here is a second paragraph of text.</p>              
             </CardContent>
-            <CardAction>
-                <CardLink>Link 1</CardLink>
-                <CardLink>Link 2</CardLink>
-                <CardLink>Link 3</CardLink>
-            </CardAction>
+            <div class="card-action">
+                <a href="#">Link 1</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 3</a>
+            </div>
         </Card>
+    </div>
+</div>
+
+<h4>Horizontal Card</h4>
+
+<div class="row">
+    <div class="col m6">
+        <HorizontalCard>
+            <CardImage ImageSource="https://lorempixel.com/100/190/nature/6"></CardImage>
+            <div class="card-stacked">
+                <CardContent>
+                    <p>This is a load of content for the card.</p>
+                    <p>Here is a second paragraph of text.</p>              
+                </CardContent>
+                <div class="card-action">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 3</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </HorizontalCard>
     </div>
 </div>
 

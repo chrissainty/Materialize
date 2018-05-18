@@ -1,8 +1,11 @@
-<div class="card-action">
+<div class="card horizontal @CardCss">
     @ChildContent
 </div>
 
 @functions {
+
+    [Parameter]
+    private string CardCss { get; set; }
     [Parameter]
     private RenderFragment ChildContent { get; set; }
 }
