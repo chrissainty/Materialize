@@ -1,0 +1,21 @@
+@if (string.IsNullOrEmpty(CustomCaption))
+{
+    <span class="badge @Css">@ChildContent</span>
+}
+else 
+{
+    <span class="badge @Css" data-badge-caption="@CustomCaption">@ChildContent</span>
+}
+
+@functions {
+
+    [Parameter]
+    private string Css { get; set; }
+
+    [Parameter]
+    private string CustomCaption { get; set; } = "";
+
+    [Parameter]
+    private RenderFragment ChildContent { get; set; }
+
+}
