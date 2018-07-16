@@ -1,0 +1,19 @@
+<li>
+    <div class="collapsible-header">
+        <i class="material-icons">@Icon</i> @Header
+    </div>
+    <div class="collapsible-body">
+        <span>@ChildContent</span>
+    </div>
+</li>
+
+@functions {
+    [Parameter]
+    private string Icon { get; set; }
+    
+    [Parameter]
+    private string Header { get; set; }
+
+    [Parameter]
+    private RenderFragment ChildContent { get; set; }
+}

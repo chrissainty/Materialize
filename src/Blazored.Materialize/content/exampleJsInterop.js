@@ -10,3 +10,9 @@ Blazor.registerFunction('Blazored.Materialize.Carousel', () => {
     var options = {};
     M.Carousel.init(elems, options);
 });
+
+Blazor.registerFunction('Blazored.Materialize.Collapsible', () => {
+    var elems = document.querySelectorAll('.collapsible');
+    var options = {};
+    M.Collapsible.init(elems, options);
+});

@@ -1,0 +1,15 @@
+@using Microsoft.AspNetCore.Blazor.Browser.Interop
+
+<ul class="collapsible">
+    @ChildContent
+</ul>
+
+@functions {
+    [Parameter]
+    private RenderFragment ChildContent { get; set; }
+
+    protected override void OnAfterRender()
+    {
+        RegisteredFunction.Invoke<bool>("Blazored.Materialize.Collapsible");
+    }
+}
