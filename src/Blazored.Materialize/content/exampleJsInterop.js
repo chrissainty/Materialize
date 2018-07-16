@@ -4,3 +4,9 @@
 Blazor.registerFunction('Blazored.Materialize.ExampleJsInterop.Prompt', function (message) {
     return prompt(message, 'Type anything here');
 });
+
+Blazor.registerFunction('Blazored.Materialize.Carousel', () => {
+    var elems = document.querySelectorAll('.carousel');
+    var options = {};
+    M.Carousel.init(elems, options);
+});

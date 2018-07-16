@@ -1,0 +1,15 @@
+@using Microsoft.AspNetCore.Blazor.Browser.Interop
+
+<div class="carousel">
+    @ChildContent
+</div>
+
+@functions {
+    [Parameter]
+    private RenderFragment ChildContent { get; set; }
+
+    protected override void OnAfterRender()
+    {
+        RegisteredFunction.Invoke<bool>("Blazored.Materialize.Carousel");
+    }
+}

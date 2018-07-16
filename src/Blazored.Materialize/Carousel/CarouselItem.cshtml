@@ -1,0 +1,11 @@
+<NavLink class="carousel-item" href=@Link>
+    @ChildContent
+</NavLink>
+
+@functions {
+    [Parameter]
+    private RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    private string Link { get; set; }
+}
